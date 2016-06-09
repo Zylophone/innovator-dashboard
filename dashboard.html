@@ -3,115 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>#COL16 Dashboard</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <style>
-  .row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .search.row {
-    width: 600px;
-    margin: 0 auto;
-  }
-  .thumbnail {
-    text-align: center;
-    transition: border .5s;
-  }
-  .thumbnail:hover {
-    border: 1px solid black;
-  }
-
-  .fa-file-text-o {
-    color: #245ecf;
-  }
-  .fa-home {
-    color: rgb(191, 11, 200);
-  }
-  .fa-newspaper-o {
-    color: rgb(247, 86, 35);
-  }
-
-  .fa-table {
-    color: rgb(42, 156, 14);
-  }
-  .fa-youtube {
-    color: rgb(255, 0, 0);
-  }
-  .fa-google {
-    color: rgb(232, 59, 59)
-  }
-  .fa-globe {
-    color: rgb(21, 18, 166);
-  }
-  .fa-users {
-    color: rgb(196, 125, 29);
-  }
-  </style>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body class="container">
-  <div class="search row">
-    <a href="https://twitter.com/search?q=%23COL16"><img class="img-responsive" src="col16.jpg" alt=""></a>
-    <form method="get" action="http://www.google.com/search">
-      <div class="input-group">
-        <input type="text" class="form-control" name="q" placeholder="Search for...">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="submit">Go!</button>
-        </span>
-      </div>
-    </form>
-  </div>
-  <div class="link row">
-    <div class="col-sm-2 col-sm-offset-4">
-      <a href="https://sites.google.com/a/certifiedinnovators.com/col16/home" class="thumbnail">
+  <div class="row">
+    <div class="six columns">
+      <a href="https://twitter.com/search?q=%23COL16"><img class="u-max-full-width" src="col16.jpg" alt=""></a>
+      <form method="get" action="http://www.google.com/search">
+        <input type="text" class="u-full-width" name="q" placeholder="Search for...">
+        <div class="button-center">
+          <button class="button" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+      <div class="link-center">
+      <a href="https://sites.google.com/a/certifiedinnovators.com/col16/home">
         <i class="fa fa-home fa-5x"></i>
       </a>
-    </div>
-    <div class="col-sm-2">
-      <a href="https://www.google.com/maps/d/u/2/viewer?mid=1SDINiGB4OUfmXOoVvO_6TwhyHSQ" class="thumbnail">
-        <i class="fa fa-globe fa-5x"></i>
-      </a>
-    </div>
-  </div>
-  <div class="link row">
-    <div class="col-sm-2 col-sm-offset-3">
-      <a href="https://docs.google.com/spreadsheets/d/1NQR25LxuVfHVj75vIOdHpdVE-kGPhKiBRxtK9C_mbFU/edit#gid=0" class="thumbnail">
-        <i class="fa fa-table fa-5x"></i>
-      </a>
-    </div>
-    <div class="col-sm-2">
-      <a href="https://docs.google.com/document/d/1rhSUaiGI9uEu0OvXQFtIu0DqIkDnC4p6oB9M9iW_FPA/edit" class="thumbnail">
-        <i class="fa fa-file-text-o fa-5x"></i>
-      </a>
-    </div>
-    <div class="col-sm-2">
-      <a href="https://docs.google.com/presentation/d/1CwetJTu21kds2cHzIi1AQEfzbyyzS2HMgOV5r-i01PY/edit" class="thumbnail">
-        <i class="fa fa-newspaper-o fa-5x"></i>
-      </a>
-    </div>
-  </div>
-  <div class="link row">
-    <div class="col-sm-2 col-sm-offset-3">
-      <a href="https://spaces.google.com/space/340843590/post/UgwH7z6l9jb1dYyte1l4AaABBw" class="thumbnail">
-        <i class="fa fa-google fa-5x"></i>
-      </a>
-    </div>
-    <div class="col-sm-2">
-      <a href="https://www.youtube.com/playlist?list=PLdjnn4n_cXLoBIdUb-xayRmIFwApibiSQ" class="thumbnail">
-        <i class="fa fa-youtube fa-5x"></i>
-      </a>
-    </div>
-    <div class="col-sm-2">
       <a href="https://groups.google.com/forum/#!forum/col16innovators" class="thumbnail">
         <i class="fa fa-users fa-5x"></i>
       </a>
+      <a href="https://www.google.com/maps/d/u/2/viewer?mid=1SDINiGB4OUfmXOoVvO_6TwhyHSQ">
+        <i class="fa fa-globe fa-5x"></i>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1NQR25LxuVfHVj75vIOdHpdVE-kGPhKiBRxtK9C_mbFU/edit#gid=0">
+        <i class="fa fa-table fa-5x"></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLdjnn4n_cXLoBIdUb-xayRmIFwApibiSQ">
+        <i class="fa fa-youtube fa-5x"></i>
+      </a>
+      <a href="https://spaces.google.com/space/340843590/post/UgwH7z6l9jb1dYyte1l4AaABBw">
+        <i class="fa fa-google fa-5x"></i>
+      </a>
+    </div>
+    </div>
+    <div class="six columns">
+      <div class="tldr"></div>
     </div>
   </div>
-    <!--
-     Spaces link
-
-
-
-    -->
+  <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="dashboard.js"></script>
 </body>
 </html>

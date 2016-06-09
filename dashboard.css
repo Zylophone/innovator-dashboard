@@ -1,0 +1,41 @@
+a .fa {
+  padding: 20px;
+  color: rgb(48, 44, 43);
+  transition: color .3s;
+}
+
+.button-center {
+  text-align: center;
+}
+
+.button {
+  transition: all .3s;
+}
+.button:hover {
+  background-color: rgb(37, 140, 191);
+  color: white;
+}
+
+.link-center {
+  text-align: center;
+
+}
+
+.fa-home:hover {
+  color: rgb(191, 11, 200);
+}
+.fa-users:hover {
+  color: rgb(196, 125, 29);
+}
+.fa-globe:hover {
+  color: rgb(21, 18, 166);
+}
+.fa-table:hover {
+  color: rgb(42, 156, 14);
+}
+.fa-youtube:hover {
+  color: rgb(255, 0, 0);
+}
+.fa-google:hover {
+  color: rgb(232, 59, 59)
+}
