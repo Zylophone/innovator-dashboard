@@ -1,0 +1,28 @@
+{
+  "name": "innovator-dashboard",
+  "version": "1.0.0",
+  "description": "dashboard to replace the new tab of google chrome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/innovator-dashboard.git"
+  },
+  "author": "jordan rhea @rheajt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rheajt/innovator-dashboard/issues"
+  },
+  "homepage": "https://github.com/rheajt/innovator-dashboard#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "skeleton-css": "^2.0.4"
+  }
+}
