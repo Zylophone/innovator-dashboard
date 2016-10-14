@@ -11,6 +11,18 @@
 
   "chrome_url_overrides": {
     "newtab": "dashboard.html"
-  }
+  },
 
+  "permissions": [
+    "identity"
+  ],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqSKLQOUoZOSyvXuT9yjA4kTO0qAkuZAEt4dl6Ah+dgcIE9ZsVYn07nFRoHNBr3jKkWxrHePdlV+N7sk80YnU4th+fssWkQNxOtvxOfpf83IGx9+CmOFFx/kLfYktY+0QamHefWKvctn4WkY9gFFZCMYZ/s+h3aQnYRgocwpHL8KoxTQhm2VBPLz6h9HdfhJtsj7fTSI5rbne/S89N5Hk6iSkyXfObIT5hoCc9Wgt0PkOj0xZ5T4vgo+dk7qL9cJS8DJWOmdrVaEE2Xrip+6ILXr9qAgZ/G9C+WRIkRRnX4OE//O/3MxNOSYDzMOPc046TIti+PhHczZH9rIIb1xDxQIDAQAB",
+
+  "oauth2": {
+    "client_id": "720708346947-d01g7d61n2ha0sjesmrp8fufc1q8brgj.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/tasks"
+    ]
+  }
 }
