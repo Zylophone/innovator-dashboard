@@ -2,29 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Innovator Dashboard</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="bundle.css">
+  <link rel="stylesheet" href="styleBundle.css">
 </head>
-<body>
+<body class="container">
   <div class="row">
-    <div class="six columns">
-      <div class="row">
-        <div class="one-half column">
-          <a href="https://twitter.com/"><img src="imgs/col16.jpg" class="u-max-full-width"></a>
-        </div>
-        <div class="one-half column">
-          <i class="fa fa-google"></i>
-        </div>
-      </div>
-      <button type="click" id="get-tasks">Get tasks</button>
+    <div class="three columns">
+      <a href="https://twitter.com/search?q=%23col16&src=typd"><img src="imgs/col16.jpg" class="u-full-width"></a>
     </div>
-    <div class="six columns">
-      <h1>calendar</h1>
+    <div class="offset-by-one one column">
+      <a href="https://docs.google.com/"><img src="imgs/gmail-icon.jpg" class="u-full-width" alt="gmail icon"></a>
+    </div>
+    <div class="one column">
+      <a href="https://drive.google.com/"><img src="imgs/drive-icon.jpg" class="u-full-width" alt="drive icon"></a>
+    </div>
+    <div class="one column">
+      <a href="https://docs.google.com/document/u/0/"><img src="imgs/docs-icon.jpg" class="u-full-width" alt="docs icon"></a>
+    </div>
+    <div class="one column">
+      <a href="https://docs.google.com/presentations/u/0/"><img src="imgs/slides-icon.jpg" class="u-full-width" alt="slides icon"></a>
+    </div>
+    <div class="one column">
+      <a href="https://docs.google.com/spreadsheets/u/0/"><img src="imgs/sheets-icon.jpg" class="u-full-width" alt="sheets icon"></a>
+    </div>
+    <div class="one column">
+      <a href="https://www.youtube.com"><img src="imgs/youtube-icon.jpg" class="u-full-width" alt="youtube icon"></a>
+    </div>
+    <div class="one column"><a href="https://form.google.com/"><img src="imgs/forms-icon.jpg" alt="forms script icon" class="u-full-width"></a></div>
+    <div class="one column"><a href="https://script.google.com/"><img src="imgs/apps-script-icon.jpg" alt="apps script icon" class="u-full-width"></a></div>
+  </div>
+  <div class="row">
+    <div class="five columns">
+      <iframe class="u-full-width" id="calendar-embed" src="" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="seven columns">
+      <section class="todoapp">
+        <header class="header">
+          <input class="new-todo" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section class="main">
+          <input class="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all complete</label>
+          <ul class="todo-list"></ul>
+        </section>
+        <footer class="footer">
+          <span class="todo-count"></span>
+          <ul class="filters">
+            <li>
+              <a href="#/" class="selected">All</a>
+            </li>
+            <li>
+              <a href="#/active">Active</a>
+            </li>
+            <li>
+              <a href="#/completed">Complete</a>
+            </li>
+          </ul>
+          <button class="clear-completed">Clear</button>
+        </footer>
+      </section>
     </div>
   </div>
 
-  <script src="dashboard.js"></script>
+  <script src="appBundle.js"></script>
 </body>
 </html>

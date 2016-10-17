@@ -1,0 +1,9 @@
+.row .one.column {
+  line-height: 100px; }
+
+.row .one.column a img {
+  vertical-align: middle;
+  transition: all .2s; }
+
+.row .one.column a img:hover {
+  transform: scale(1.2); }

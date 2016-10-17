@@ -164,7 +164,7 @@ a:hover {
 
 
 /* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 .button,
 button,
 input[type="submit"],
@@ -224,7 +224,7 @@ input[type="button"].button-primary:focus {
 
 
 /* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -241,7 +241,7 @@ select {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
-/* Removes awkward default styles on some inputs for iOS */
+/* Removes awkward default styles on some inputs for iOS
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -286,7 +286,7 @@ label > .label-body {
 
 
 /* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 ul {
   list-style: circle inside; }
 ol {
@@ -305,7 +305,7 @@ li {
 
 
 /* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -321,7 +321,7 @@ pre > code {
 
 
 /* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 th,
 td {
   padding: 12px 15px;
@@ -336,7 +336,7 @@ td:last-child {
 
 
 /* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––
 button,
 .button {
   margin-bottom: 1rem; }

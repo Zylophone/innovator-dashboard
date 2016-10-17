@@ -19,8 +19,12 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.3.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-imagemin": "^3.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7"
   },
   "dependencies": {
     "skeleton-css": "^2.0.4"
