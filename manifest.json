@@ -12,12 +12,7 @@
   "homepage_url": "http://jordanrhea.com/blog/google-innovator-dashboard/",
 
   "chrome_url_overrides": {
-    "newtab": "dashboard.html"
-  },
-
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
+    "newtab": "index.html"
   },
 
   "permissions": [
