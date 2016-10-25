@@ -8,7 +8,7 @@
  * model.
  */
 angular.module('todomvc')
-	.factory('todoStorage', function ($http, $injector) {
+	.factory('todoStorage', ['$http', '$injector', function ($http, $injector) {
 		'use strict';
 
 		// Detect if an API backend is present. If so, return the API module, else
@@ -19,9 +19,9 @@ angular.module('todomvc')
 			}, function () {
 				return $injector.get('localStorage');
 			});
-	})
+	}])
 
-	.factory('api', function ($resource) {
+	.factory('api', ['$resource', function ($resource) {
 		'use strict';
 
 		var store = {
@@ -85,23 +85,27 @@ angular.module('todomvc')
 		};
 
 		return store;
-	})
+	}])
 
-	.factory('localStorage', function ($q) {
+	.factory('localStorage', ['$q', '$http', function ($q, $http) {
 		'use strict';
-
-		var STORAGE_ID = 'todos-angularjs';
 
 		var store = {
 			todos: [],
 
-			_getFromLocalStorage: function () {
-				return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
-			},
+      _getFromLocalStorage: function() {
+        var deferred = $q.defer();
 
-			_saveToLocalStorage: function (todos) {
-				localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
-			},
+        chrome.storage.sync.get({todos: []}, function(items) {
+          deferred.resolve(items.todos);
+        })
+
+        return deferred.promise;
+      },
+
+      _saveToLocalStorage: function(todos) {
+        chrome.storage.sync.set({todos: todos});
+      },
 
 			clearCompleted: function () {
 				var deferred = $q.defer();
@@ -132,8 +136,10 @@ angular.module('todomvc')
 			get: function () {
 				var deferred = $q.defer();
 
-				angular.copy(store._getFromLocalStorage(), store.todos);
-				deferred.resolve(store.todos);
+        store._getFromLocalStorage().then(function(response) {
+          angular.copy(response, store.todos);
+          deferred.resolve(store.todos);
+        });
 
 				return deferred.promise;
 			},
@@ -162,4 +168,4 @@ angular.module('todomvc')
 		};
 
 		return store;
-	});
+	}]);

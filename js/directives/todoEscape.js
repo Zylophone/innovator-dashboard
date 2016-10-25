@@ -5,7 +5,7 @@
  * an `escape` keydown event.
  */
 angular.module('todomvc')
-	.directive('todoEscape', function () {
+	.directive('todoEscape', [function () {
 		'use strict';
 
 		var ESCAPE_KEY = 27;
@@ -21,4 +21,4 @@ angular.module('todomvc')
 				elem.unbind('keydown');
 			});
 		};
-	});
+	}]);

@@ -1,0 +1,1 @@
+!function(){chrome.identity.getProfileUserInfo(function(e){chrome.storage.sync.get({calendar:""},function(n){document.getElementById("calendar-frame").src="https://calendar.google.com/calendar/embed?src="+e.email})})}();
